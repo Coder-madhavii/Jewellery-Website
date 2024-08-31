@@ -1,0 +1,148 @@
+.header-area-navbar {
+    border: 2px solid rgb(2, 26, 12);
+    background-color: rgb(1, 24, 15);
+    padding: 16px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+
+}
+
+nav {
+    display: flex;
+}
+
+.header-area-navbar nav ul {
+    display: flex;
+}
+
+.header-area-navbar nav ul li {
+    margin-left: 25px;
+    list-style-type: none;
+    position: relative;
+    margin-top: 10;
+    font-size: large;
+}
+
+.header-area-navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid #009688;
+}
+
+.header-area-navbar nav ul li a:hover {
+    color: #395443;
+}
+
+.header-area-navbar nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -5px;
+}
+
+.header-area-navbar nav ul li:hover::after {
+    width: 100%;
+    font-family: arial;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 160px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.zoom-In {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.zoom-In:hover {
+    transform: scale(1.1);
+}
+
+/* gallery */
+.gallery {
+    width: 100%;
+    display: block;
+    height: 1020px;
+    background-color: #040f0b;
+    padding: 0px 0;
+    border:6px solid black;
+}
+
+.gallery .gallery-filter {
+    padding: 18px 15px;
+    width: 150%;
+    margin-top: -80px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.gallery .gallery-filter .filter-item:hover {
+    color: #d1d7da;
+    border-color: #19bda1;
+}
+
+.gallery .gallery-filter .filter-item {
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 6px 24px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: 0.3s ease;
+}
+
+.row .gallery-filter .filter-item.active {
+    color: #ff9800;
+}
+
+.row .gallery-item {
+    width: calc(100%/6);
+    padding: 17px;
+}
+
+.row .gallery-item-inner img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.row .gallery-item.show {
+    animation: 0.5s fade ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.gallery .gallery-item.hide {
+    display: none;
+}
+.descr{
+    font-size:16px;
+    color:#ff9800;
+
+}

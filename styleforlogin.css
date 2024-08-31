@@ -1,0 +1,155 @@
+*{ 
+    font-family:'sans-serif';
+}
+body{
+       background-image:linear-gradient( rgba(88, 103, 101, 0.039), rgba(88, 129, 114, 0.384)),
+      url(/background\ image.jpg); 
+background-size:cover;
+background-position:center;
+padding:0px;
+margin:0px;
+height:845px;
+}
+.header-area-navbar {
+    border: 2px solid rgb(2, 26, 12);
+    background-color: rgb(1, 24, 15);
+    padding: 16px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+
+}
+
+nav {
+    display: flex;
+}
+
+.header-area-navbar nav ul {
+    display: flex;
+}
+
+.header-area-navbar nav ul li {
+    margin-left: 25px;
+    list-style-type: none;
+    position: relative;
+    margin-top: 10;
+    font-size: large;
+}
+
+.header-area-navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid #009688;
+}
+
+.header-area-navbar nav ul li a:hover {
+    color: #395443;
+}
+
+.header-area-navbar nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -5px;
+}
+
+.header-area-navbar nav ul li:hover::after {
+    width: 100%;
+    font-family: arial;
+}
+
+
+header{
+    padding:11px 72px;
+}
+.content{
+    overflow:auto;
+}
+
+   .space1 {
+    background-image:linear-gradient(rgba(11, 171, 159, 0.15),rgba(41, 164, 122, 0.69)), url("/logo\ shree\ j.jpg");
+    background-size:cover;
+    background-position:center;
+    height:227px;
+    width: 17%;
+    float: left;
+    border-radius: 131px 0px; 
+}
+ .heading{
+     float:left;
+     width:40%;
+     font-size:69px;
+     color:rgba(17, 175, 163, 0.96);
+     padding:0px 34px;
+     width:56px;
+}
+
+.space {
+ font-size:44px;
+ font-weight: 100;
+ width:100%;
+ text-align: left;
+ clear:left;
+ margin:0px;
+ padding:28px 0px 0px 0px; 
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ color: rgb(11,171, 159,0.86);
+}
+  .content p{
+
+    padding:0px;
+    margin:0px;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(11,171, 159,0.86);
+    clear:left;
+}
+.form{
+    text-align: center;
+    padding:0px 34px;
+}
+ .form .form-heading{
+    font-size: 26px;
+    padding:0px;
+}
+.form .form-heading a{
+text-decoration:none;
+color:rgb(160,225,220,0.75);
+}
+.form .form-heading a:hover{
+    color:white;
+    font-weight: 100;
+    font-family: fantasy;
+}
+.form-content{
+ margin-bottom:23px;
+ padding:10px 15px;
+ margin: 22px 160px;
+}
+.form-content ul{
+ list-style-type:none;
+}
+.form-content-list{
+    padding:10px 11px 0px 11px;
+}
+ #plain-white{
+    color:rgb(11, 171, 159,0.86);
+    font-size: 30px; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.footer{
+    padding:7px 750px;
+    font-size:21px;
+}
+.footer a{
+    text-decoration: none;
+    color:rgb(6, 50, 43)
+}
+.footer a:hover{
+    color:white;
+    font-family:serif;
+}

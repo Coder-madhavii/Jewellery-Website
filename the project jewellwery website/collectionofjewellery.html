@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection</title>
+    <link rel="stylesheet" href="collection of jewellery.css">
+</head>
+<body>
+    <header>
+        <div class="header-area-navbar">
+            <nav>
+                <ul>
+    
+                    <li><a href="/jewellery website.html">HOME</a></li>
+                    <li><a href="/login form.html">LOGIN</a></li>
+                    <li><a name="#">GALLERY</a></li>
+                    <li><a href="#">NEW ARRIVALS</a></li>
+                    <li><a href="/about us.html">ABOUT US</a></li>
+                    <li><a href="/jewellery website.html/#help">HELP</a></li>
+    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="gallery-filter">
+                    <div class="filter-item active" data-filter="all">all
+                    </div>
+                    <div class="filter-item" data-filter="necklace">Necklace</div>
+                    <div class="filter-item" data-filter="ring">Ring</div>
+                    <div class="filter-item" data-filter="Bracelet">Bracelet</div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- gallery item starts -->
+                <div class="gallery-item ring">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/platinum ring.jpg">
+                            <h5 class="descr">Platinum Rings<br>&#8377 47000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item necklace">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/golden chain pendent.webp">
+                            <h5 class="descr"> Golden Chain Pendent<br>&#8377 400000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item ring">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/birstone ring.jpg">
+                            <h5 class="descr">Birthstone Rings<br>&#8377 1,52,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item necklace">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/mother of pearl set.jpg">
+                            <h5 class="descr">Mother of Pearl set<br>&#8377 53,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item Bracelet">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/breaded bracelet.jpg">
+                            <h5 class="descr"> Breaded Bracelets<br>&#8377 1,25,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item necklace">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/thread necklace image.jpg">
+                            <h5 class="descr">Thread Necklace<br>&#8377 1,02,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item Bracelet">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/toggle clasp bracelet image.jpg">
+                            <h5 class="descr">Toggle Clasp Bracelets<br>&#8377 1,47,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item necklace">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/collar necklace image.jpg">
+                            <h5 class="descr">Collar Necklace<br>&#8377 1,00,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item Bracelet">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/liquisd silver braclet image.jpg">
+                            <h5 class="descr">Liquid Silver Bracelet<br>&#8377 80,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery item ends -->
+                <!-- gallery item starts -->
+                <div class="gallery-item ring">
+                    <div class="gallery-item-inner">
+                        <div class="zoom-In">
+                            <img src="/titanium ring image.jpg">
+                            <h5 class="descr">Titanium Rings<br>&#8377 25,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- galllery  items end -->
+            </div>
+        </div>
+    </section>
+
+<!-- javascript code starts here -->
+<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.filter-item').click(function(){
+            const value=$(this).attr('data-filter');
+            if(value=='all'){
+                $('.gallery-item').show('1000');
+            }
+            else{
+                $('.gallery-item').not('.'+value).hide('1000');
+                $('.gallery-item').filter('.'+value).show('1000');
+            }
+        })
+        //active class
+        $('.filter-item').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    })
+  </script>
+
+<!-- javascript code ends here -->
+
+</body>
+</html>

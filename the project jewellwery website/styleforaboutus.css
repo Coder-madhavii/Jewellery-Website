@@ -1,0 +1,112 @@
+*{ 
+    /* padding:11px 11px 11px 11px; */
+       font-family:'sans-serif';
+   }
+body{
+    background-image:
+     linear-gradient(  rgba(154, 167, 166, 0.235),rgba(6, 159, 149, 0.174)), 
+     url(/background\ image.jpg);  
+background-size:cover;
+background-position:center;
+margin:0px;
+}
+
+header ,main{
+    padding:7px 72px;
+}
+
+.header-area-navbar {
+    border: 2px solid rgb(2, 26, 12);
+    background-color: rgb(1, 24, 15);
+    padding: 16px;
+    margin: 0px;
+    width: 100%;
+    height: 60px;
+
+}
+
+nav {
+    display: flex;
+}
+
+.header-area-navbar nav ul {
+    display: flex;
+}
+
+.header-area-navbar nav ul li {
+    margin-left: 25px;
+    list-style-type: none;
+    position: relative;
+    margin-top: 10;
+    font-size: large;
+}
+
+.header-area-navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid #009688;
+}
+
+.header-area-navbar nav ul li a:hover {
+    color: #395443;
+}
+
+.header-area-navbar nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -5px;
+}
+
+.header-area-navbar nav ul li:hover::after {
+    width: 100%;
+    font-family: arial;
+}
+
+.content{
+    overflow:auto;
+}
+
+   .space1 {
+    background-image:linear-gradient(rgba(11, 171, 159, 0.15),rgba(41, 164, 122, 0.69)), url("/logo\ shree\ j.jpg");
+    background-size:cover;
+    background-position:center;
+ text-align: left;
+ clear:center;
+    height:227px;
+    width: 17%;
+    float: left;
+    border-radius: 131px 0px; 
+}
+ .heading{
+     float:left;
+     width:40%;
+     font-size:69px;
+     color:#1e9696;
+     padding:0px 34px;
+     width:56px;
+}
+  .content p{
+
+    padding:0px;
+    margin:0px;
+    font-size: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(138, 176, 174, 0.943);
+    clear:left;
+}
+.content2 p{
+
+    padding:0px;
+    margin:0px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(239, 247, 246, 0.86);
+    clear:left;
+    text-align: justify;
+
+}
